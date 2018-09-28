@@ -23,11 +23,23 @@
 			<li>Problema 2</li>
 			<li>Problema 3</li>
 			<li>Problema 4</li>
+			<li><a href="hoja2/ejercicio_5.php">Problema 5</a></li>
+			<li>Problema 6</li>
+			<li>Problema 7</li>
+			<li><a href="hoja2/ejercicio_8.php">Problema 8</a></li>
+			<li>Problema 9</li>
+		</ul>
+	</li>
+	<li>
+		<h3>Hoja número 3</h3>
+		<ul>
+			<li>Problema 1</li>
+			<li>Problema 2</li>
+			<li>Problema 3</li>
+			<li><a href="hoja3/ejercicio_4.php">Problema 4</a></li>
 			<li>Problema 5</li>
 			<li>Problema 6</li>
 			<li>Problema 7</li>
-			<li>Problema 8</li>
-			<li>Problema 9</li>
 		</ul>
 	</li>
 </ul>
