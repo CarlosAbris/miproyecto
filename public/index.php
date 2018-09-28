@@ -1,51 +1,33 @@
-<b>Esto está fuera de PHP</b>
-<?= "<h1>Hola Mundo otra vez!!!</h1>" ?>
-<i>Por tanto será ignorado</i>
-
-<?php 
-	//$numero = '';
-	var_dump($numero);
-?>
-<?php if($numero) { ?>
-<br>El numero es distinto de 0
-<!-- <?php } else if ($numero > 100){ ?>
-<br>El número es mayor que 100 -->
-<?php } else { ?>
-<br>El número es 0
-<?php } ?>
-
-<br>Veamos otro uso de la variable<br>
-<?php
-
-	$numero = 'Soy el profe';
-
-	var_dump($numero);
-?>
+<h1>Menú de resolución de las hojas de problemas</h1>
 <br>
-<?php
-	$cadena = "Esto es una variable";
-
-	echo 'La variable contiene el texto $cadena';
-
-	$texto = "";
-	echo "<br>";
-	echo $texto ? "Cadena no vacía" : "Cadena vacía";
-	echo "<br>";
-	echo "<br>";
-
-	$miArray = ['España' => 'Madrid', 
-				'Francia' => 'París',
-				'Portugal' => 'Lisboa'];
-
-
-	foreach ($miArray as $key => $value) {
-		echo 'La capital de ' . $key . ' es ' . $value . '<br>';
-	}
-
-	foreach ($miArray as $key => $value) {
-		echo "La capital de $key es $value <br>";
-	}
-
-
-
-?>
+<ul>
+	<li>
+		<h3>Hoja número 1</h3>
+		<ul>
+			<li><a href="hoja1/ejercicio_1.php">Problema 1</a></li>
+			<li>Problema 2</li>
+			<li><a href="hoja1/ejercicio_3.php">Problema 3</a></li>
+			<li>Problema 4</li>
+			<li>Problema 5</li>
+			<li>Problema 6</li>
+			<li>Problema 7</li>
+			<li>Problema 8</li>
+			<li>Problema 9</li>
+			<li>Problema 10</li>
+		</ul>
+	</li>
+	<li>
+		<h3>Hoja número 2</h3>
+		<ul>
+			<li>Problema 1</li>
+			<li>Problema 2</li>
+			<li>Problema 3</li>
+			<li>Problema 4</li>
+			<li>Problema 5</li>
+			<li>Problema 6</li>
+			<li>Problema 7</li>
+			<li>Problema 8</li>
+			<li>Problema 9</li>
+		</ul>
+	</li>
+</ul>
