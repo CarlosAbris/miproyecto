@@ -27,3 +27,25 @@
 
 	echo 'La variable contiene el texto $cadena';
 
+	$texto = "";
+	echo "<br>";
+	echo $texto ? "Cadena no vacía" : "Cadena vacía";
+	echo "<br>";
+	echo "<br>";
+
+	$miArray = ['España' => 'Madrid', 
+				'Francia' => 'París',
+				'Portugal' => 'Lisboa'];
+
+
+	foreach ($miArray as $key => $value) {
+		echo 'La capital de ' . $key . ' es ' . $value . '<br>';
+	}
+
+	foreach ($miArray as $key => $value) {
+		echo "La capital de $key es $value <br>";
+	}
+
+
+
+?>
