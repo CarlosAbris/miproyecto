@@ -42,4 +42,24 @@
 			<li>Problema 7</li>
 		</ul>
 	</li>
+	<li>
+		<h3>Hoja número 4</h3>
+		<ul>
+			<li>Problema 1</li>
+			<li>Problema 2</li>
+			<li><a href="hoja4/ejercicio_3.php">Problema 3</a></li>
+			<li>Problema 4</li>
+			<li>Problema 5</li>
+		</ul>
+	</li>
+	<li>
+		<h3>Hoja número 5</h3>
+		<ul>
+			<li>Problema 1</li>
+			<li>Problema 2</li>
+			<li>Problema 3</li>
+			<li>Problema 4</li>
+			<li>Problema 5</li>
+		</ul>
+	</li>
 </ul>
