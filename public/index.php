@@ -84,4 +84,10 @@
 			<li><a href="">E</a></li>
 		</ul>
 	</li>
+	<li>
+		<h3>Tema 6</h3>
+		<ul>
+			<li><a href="tema6/index.php">Ejemplo de formulario</a></li>
+		</ul>
+	</li>
 </ul>
