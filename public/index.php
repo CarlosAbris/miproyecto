@@ -79,8 +79,8 @@
 	<li>
 		<h3>Tema 5</h3>
 		<ul>
-			<li><a href="">E</a></li>
-			<li><a href="">E</a></li>
+			<li><a href="tema5/inicio.php">Ejemplo de Login</a></li>
+			<li><a href="tema5/cookie.php">Ejemplo de Cookie</a></li>
 			<li><a href="">E</a></li>
 		</ul>
 	</li>
