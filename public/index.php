@@ -90,4 +90,20 @@
 			<li><a href="tema6/index.php">Ejemplo de formulario</a></li>
 		</ul>
 	</li>
+	<li>
+		<h3>Tema 8</h3>
+		<ul>
+			<li><a href="tema8/trim.php">Ejemplo de Trim()</a></li>
+			<li><a href="tema8/html.php">Ejemplo de Funciones de cadenas</a></li>
+		</ul>
+	</li>
+	<li>
+		<h3>Tema 9</h3>
+		<ul>
+			<li><a href="tema9/ejemplo1.php">Ejemplo 1</a></li>
+			<li><a href="tema9/ejemplo2.php">Ejemplo 2 CITAS MÉDICAS</a></li>
+			<li><a href="tema9/ejemplo3.php">Ejemplo 3 CITAS MÉDICAS</a></li>
+			<li><a href="tema9/ejemplo4.php">Ejemplo 4 VER CITAS MÉDICAS</a></li>
+		</ul>
+	</li>
 </ul>
