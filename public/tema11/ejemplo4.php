@@ -1,6 +1,7 @@
 <?php
 
 include "plantilla.php";
+include "plantillaHtml.php";
 
 $html = '<!DOCTYPE html>
 <html lang="es">
@@ -22,6 +23,7 @@ $diccionario = [
 				"ciudad" => "Murcia"
 				];
 
-$plantilla = new Plantilla($html);
+$plantilla = new PlantillaHtml($html);
 $plantilla->renderData($diccionario);
+
 
