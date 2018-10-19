@@ -24,7 +24,7 @@ session_start();
 	$p2 = new Producto("Cereales de chocolate", 5.99);
 	$p3 = new Producto("Servilletas 20x20", 1.2);
 
-	$carrito = new Carrito();
+	$carrito = Carrito::getCarrito();
 	$carrito->meter($p1);
 	$carrito->meter($p2);
 	$carrito->meter($p3);
