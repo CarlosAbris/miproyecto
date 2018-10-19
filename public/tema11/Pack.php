@@ -2,8 +2,9 @@
 
 class Pack implements iEnCarrito
 {
+	use MasMenos;
+
 	private $productosPack;
-	private $cantidad = 1;
 
 	public function __construct($arrayProductos)
 	{
@@ -51,15 +52,4 @@ class Pack implements iEnCarrito
 		return $total * $this->cantidad;
 	}
 
-	public function masUnidad($unidades = 1)
-	{
-		$this->cantidad += $unidades;
-	}
-
-	public function menosUnidad()
-	{
-		if ($this->cantidad > 0) {
-			$this->cantidad--;
-		}
-	}
 }

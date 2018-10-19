@@ -2,10 +2,11 @@
 
 class Producto implements iEnCarrito
 {
+	use MasMenos;
+
 	private $nombre;
 	private $precio;
 	private $iva;
-	private $cantidad = 1;
 
 	public function mostrar()
 	{
@@ -27,18 +28,6 @@ class Producto implements iEnCarrito
 		$this->nombre = $nombre;
 		$this->precio = $precio;
 		$this->iva = $iva;
-	}
-
-	public function masUnidad($unidades = 1)
-	{
-		$this->cantidad += $unidades;
-	}
-
-	public function menosUnidad()
-	{
-		if ($this->cantidad > 0) {
-			$this->cantidad--;
-		}
 	}
 
 	public function permiteUnidades()
