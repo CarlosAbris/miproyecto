@@ -1,4 +1,11 @@
-<?php include "carrito.php" ?>
+<?php 
+
+spl_autoload_register(function($clase) {
+	$archivo = $clase . '.php';
+	include $archivo;
+});
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
