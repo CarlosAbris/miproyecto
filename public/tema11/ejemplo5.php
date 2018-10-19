@@ -48,6 +48,11 @@ session_start();
 
 	$carrito->mostrar();
 
+	echo "<br><br>";
+	echo $p1;
+	echo $p2;
+	echo $p3;
+
 ?>
 
 <br><br>
