@@ -19,6 +19,12 @@
 	$carrito->meter($p1);
 	$carrito->meter($p2);
 	$carrito->meter($p3);
+	$carrito->quitar(1);
+
+	$carrito->masUnidad(0);
+	$carrito->masUnidad(0);
+	$carrito->menosUnidad(2);
+	$carrito->menosUnidad(2);
 
 	$carrito->mostrar();
 

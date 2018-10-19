@@ -28,6 +28,22 @@ class Carrito
 
 		echo '</div>';
 	}
+
+	public function quitar($indice)
+	{
+		unset($this->productos[$indice]);
+	}
+
+	public function masUnidad($indice)
+	{
+		$this->productos[$indice]->masUnidad();
+	}
+
+	public function menosUnidad($indice)
+	{
+		$this->productos[$indice]->menosUnidad();
+	}
+
 }
 
 
@@ -40,17 +56,17 @@ class Producto
 
 	public function mostrar()
 	{
-		return "<p>{$this->nombre}: {$this->precio} &euro; + {$this->iva}%</p>";
+		return "<p><span>({$this->cantidad}x)</span> {$this->nombre}: {$this->precio} &euro; + {$this->iva}%</p>";
 	}
 
 	public function precio()
 	{
-		return $this->precio;
+		return $this->precio * $this->cantidad;
 	}
 
 	public function precioIva()
 	{
-		return round($this->precio + ($this->precio * $this->iva/100), 2);
+		return round($this->precio * $this->cantidad * (1 + $this->iva/100), 2);
 	}
 
 	public function __construct($nombre, $precio, $iva = 21)
@@ -59,5 +75,18 @@ class Producto
 		$this->precio = $precio;
 		$this->iva = $iva;
 	}
+
+	public function masUnidad($unidades = 1)
+	{
+		$this->cantidad += $unidades;
+	}
+
+	public function menosUnidad()
+	{
+		if ($this->cantidad > 0) {
+			$this->cantidad--;
+		}
+	}
+
 }
 
