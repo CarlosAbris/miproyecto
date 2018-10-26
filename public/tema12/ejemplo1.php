@@ -39,3 +39,40 @@ echo '<pre>';
 print_r($resultado);
 
 echo $resultado[0][0];
+echo '<br>';
+echo $resultado[0]['first_name'];
+
+$query3 = $connection->prepare("INSERT INTO users(first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)");
+
+$first_name = "Hermenegildo";
+
+$query3->bindValue(':first_name', $first_name, PDO::PARAM_STR);
+$query3->bindParam(':last_name', $last_name, PDO::PARAM_STR);
+$query3->bindParam(':email', $email, PDO::PARAM_STR);
+$query3->bindParam(':password', $password, PDO::PARAM_STR);
+
+$first_name = 'John';
+$last_name = 'Smith';
+$email = 'john@smith.us';
+$password = md5('123456');
+
+$query3->execute();
+
+$first_name = 'Heriberto';
+$last_name = 'Gómez Juárez';
+$email = 'heri@goju.es';
+$password = md5('123456');
+
+$query3->execute();
+
+
+
+
+
+
+
+
+
+
+
+
