@@ -120,6 +120,7 @@
 		<h3>Tema 12 PDO</h3>
 		<ul>
 			<li><a href="tema12/ejemplo1.php">Ejemplo 1. Ejemplo de conexión a la BD</a></li>
+			<li><a href="tema12/index.php">Ejemplo completo</a></li>
 		</ul>
 	</li>
 </ul>
