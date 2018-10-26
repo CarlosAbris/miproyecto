@@ -116,4 +116,10 @@
 			<li><a href="tema11/ejemplo5.php">Ejemplo 5. Carrito de la Compra</a></li>
 		</ul>
 	</li>
+	<li>
+		<h3>Tema 12 PDO</h3>
+		<ul>
+			<li><a href="tema12/ejemplo1.php">Ejemplo 1. Ejemplo de conexión a la BD</a></li>
+		</ul>
+	</li>
 </ul>
