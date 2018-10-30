@@ -11,8 +11,8 @@ echo '<pre>';
 $usuario = new Usuario;
 
 $datos = [
-		'nombre' => 'Jorge Juan',
-		'email' => 'jj@jj.es',
+		'nombre' => 'Gilberto',
+		'email' => 'gili@gili.es',
 		'password' => '123456',
 		'edad' => '22'
 		];
@@ -47,7 +47,7 @@ try {
 	echo '<h1>ERROR: ' . $e->getMessage() . '</h1>';
 
 }
-*/
+
 
 // Esto es el DELETE
 
@@ -63,6 +63,22 @@ try {
 	echo '<h1>ERROR: ' . $e->getMessage() . '</h1>';
 
 }
+
+// Probamos el método GetID
+print_r($usuario->getID(3));
+*/
+
+// Probamos las transacciones
+try {
+	$usuario->setTransaction();
+	$usuario->insert($datos);
+	$usuario->endTransaction();
+} catch (Exception $e) {
+	$usuario->cancelTransaction();
+	echo '<p>ERROR: ' . $e->getMessage() . '</p>';
+}
+
+
 
 
 

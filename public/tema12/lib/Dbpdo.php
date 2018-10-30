@@ -195,6 +195,32 @@ class Dbpdo
 		}
 	}
 
+	public function getID ( $id ) 
+	{
+		$prepare = $this->db->prepare("SELECT * FROM $this->table WHERE id = $id");
+
+		$prepare->execute();
+
+		$this->setQuery($prepare);
+
+		return $prepare->fetchAll(PDO::FETCH_ASSOC);
+	}
+
+	public function setTransaction()
+	{
+		return $this->db->beginTransaction();
+	}
+
+	public function endTransaction()
+	{
+		return $this->db->commit();
+	}
+
+	public function cancelTransaction()
+	{
+		return $this->db->rollback();
+	}
+
 }
 
 
